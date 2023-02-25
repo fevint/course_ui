@@ -17,6 +17,64 @@ class DescriptionSection extends StatelessWidget {
             ),
             textAlign: TextAlign.justify,
           ),
+          const SizedBox(
+            height: 20,
+          ),
+          Row(
+            children: const [
+              Text(
+                'Course Length: ',
+                style: TextStyle(
+                  fontSize: 19,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              Spacer(),
+              Icon(
+                Icons.timer,
+                color: Color(0xff674AEF),
+              ),
+              SizedBox(
+                width: 5,
+              ),
+              Text(
+                '26 Hours',
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          Row(
+            children: const [
+              Text(
+                'Rating: ',
+                style: TextStyle(
+                  fontSize: 19,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              Spacer(),
+              Icon(
+                Icons.star,
+                color: Colors.amber,
+              ),
+              SizedBox(
+                width: 5,
+              ),
+              Text(
+                '4.5',
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500,
+                ),
+              )
+            ],
+          ),
         ],
       ),
     );
